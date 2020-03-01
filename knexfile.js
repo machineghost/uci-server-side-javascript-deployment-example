@@ -7,6 +7,10 @@ module.exports = {
       password: '$ecret'
     }
   },
+  live: {
+    client: 'postgresql',
+    connection: process.env.DATABASE_URL
+  },
   test: {
     client: 'postgresql',
     connection: {
