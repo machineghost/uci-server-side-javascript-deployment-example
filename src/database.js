@@ -4,7 +4,6 @@ import pg from 'pg'
 
 // Tell PG to return counts as numbers, not strings
 pg.types.setTypeParser(20, 'text', parseInt);
-console.log(config[process.env.NODE_ENV || 'development'], process.env.NODE_ENV)
 export default knex(
   config[process.env.NODE_ENV || 'development']
 );
