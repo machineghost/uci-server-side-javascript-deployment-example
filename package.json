@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm run migrate; npm run seed",
     "clean-db-test": "npm run reset-test-db; npm run test",
     "db-test": "npm run reset-test-db; npm run test",
     "knex": "node -r esm node_modules/.bin/knex",
